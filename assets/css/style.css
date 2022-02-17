@@ -1,0 +1,134 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto; /* No tiene margen arriba ni abajo y a los lados pone el margin suficiente para que siempre se encuentre centrado */
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows: 550px;
+    border-bottom: 1px solid #ebeaeb;
+
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info {
+    align-self: center;
+}
+
+.title {
+    font-weight: bolder;
+    color: #333;
+    font-size: 3rem;
+    margin-bottom: 24px;
+
+}
+
+.text-info {
+    font-weight: 500;
+    color: #333;
+    font-size: 1.5rem;
+
+
+}
+
+.home-button {
+    background-color: #ff8e00;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+}
+
+.dishes {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(150px,200px));
+    grid-auto-rows: repeat(3,1fr);
+    grid-template-areas: 
+        "head head head head"
+        "video video img-1 img-2"
+        "video video img-3 img-4";
+        gap: 15px;
+        justify-content: center;
+
+}
+
+.dishes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.our-services-title {
+    grid-area: head;
+    place-self: center;
+    margin-top: 150px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+
+}
+
+.video {
+    grid-area: video;
+}
+
+.img-1 {
+    grid-area: img-1;
+}
+
+.img-2 {
+    grid-area: img-2;
+}
+
+.img-3 {
+    grid-area: img-3;
+}
+
+.img-4 {
+    grid-area: img-4;
+}
+
+.home-menu {
+    margin-top: 160px;
+    justify-content: center;
+    justify-items: center;
+
+    
+
+
+}
+
+.home-menu-title {
+    font-size: 2rem;
+    text-align: center;
+
+
+}
+
+.slider-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    justify-content: center;
+    grid-auto-rows: 1fr;
+    gap: 16px;
+    align-content: center;
+
+
+}
+
+.slider-menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #ffefeb;
+    border-radius: 16px;
+}
